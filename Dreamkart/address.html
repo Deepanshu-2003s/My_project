@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Address Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  .address-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  .address-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .address-container input[type="text"],
+  .address-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .address-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  .address-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="address-container">
+  <h2>Address Form</h2>
+  <form action="bill.html" method="get">
+    <input type="text" name="address1" placeholder="Address 1" required>
+    <input type="text" name="address2" placeholder="Address 2 (Optional)">
+    <input type="text" name="city_town" placeholder="City/Town" required>
+    <input type="text" name="district" placeholder="District" required>
+    <input type="text" name="state" placeholder="State" required>
+    <select name="country" required>
+        <option value="">Select Country</option>
+        <option value="INDIA">India</option>
+        <option value="USA">United States</option>
+        <option value="UK">United Kingdom</option>
+        <option value="CANADA">Canada</option>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

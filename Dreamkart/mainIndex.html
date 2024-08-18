@@ -1,1 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamKart</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaebf9;
+        }
+        /* Header styles */
+        header {
+            background-color: #007bff;
+            color: #0f0e0e;
+            padding: 1rem;
+            text-align: center;
+        }
+        /* Navigation menu styles */
+        nav {
+            background-color: #000000c7;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: background-color 0.3s ease;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: #555; /* Change background color on hover */
+        }
+        /* #login-link {
+    font-weight: bold;
+    color: #fff; /* Unique color for the login link */
+    /* padding: 5px;
+    border-radius: 5px;
+    margin-right: auto;
+
+} */
+        #login-link:hover{
+            background-color: rgb(151, 36, 245);
+        }
+        #login-link a:hover{
+            color: black;
+        } */
+        #login-link {
+    color: #007bff; /* Blue color for the login link */
+    font-weight: bold;
+}
+
+/* Hover effect for login link */
+#login-link:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text color on hover */
+}
+
+/* Flex container for the login link to push it to the right */
+nav .login-container {
+    margin-right: auto;
+}
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            justify-items: center;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 250px;
+        }
+        
+        /* Basic button styling */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        /* Add to Cart button styles */
+        .add-to-cart-button {
+            background-color: #007bff; /* Blue color for Add to Cart button */
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        /* Buy Now button styles */
+        .buy-now-button {
+            background-color: #28a745; /* Green color for Buy Now button */
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        /* Hover effect for Add to Cart button */
+        .add-to-cart-button:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+        }
+        /* Hover effect for Buy Now button */
+        .buy-now-button:hover {
+            background-color: #218838; /* Darker shade of green on hover */
+        }
+        /* Add some margin between buttons */
+        button + button {
+            margin-left: 10px;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>DreamKart</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#electronics">Electronics</a>
+        <a href="#clothing">Clothing</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+            <a id="login-link" href="login.html"> Log in <i class="fa-solid fa-right-to-bracket"></i></a>
+    </nav>
+
+    <section id="Grocery">
+        <h2>Grocery</h2>
+        <div class="product-grid">
+            <!-- Product cards for Electronics -->
+            <div class="product-card">
+                <img src="/e-commerce Images/peanut.png" alt="Product 1">
+                <h3>Peanut Butter</h3>
+                <p>₹529</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/tiger.png" height="00px" alt="Product 1">
+                <h3>Biscuit</h3>
+                <p>₹33</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/cookingoil.png" alt="Product 1">
+                <h3>Cooking Oil</h3>
+                <p>₹180</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/dryfruit.png" alt="Product 1">
+                <h3>Dry Fruits</h3>
+                <p>₹345</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more electronic product cards here -->
+        </div>
+    </section>
+
+
+    <section id="Shoes">
+        <h2>Shoes</h2>
+        <div class="product-grid">
+            <!-- Product cards for Electronics -->
+            <div class="product-card">
+                <img src="shoes1.png" alt="Product 1">
+                <h3>Sneakers</h3>
+                <p>₹789</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shoes2.png" alt="Product 1">
+                <h3>Sport Shoes</h3>
+                <p>₹899</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shoes3.png" alt="Product 1">
+                <h3>Sparx</h3>
+                <p>₹1299</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="shoes4.png" alt="Product 1">
+                <h3>Newbalance Shoes</h3>
+                <p>₹999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more electronic product cards here -->
+        </div>
+    </section>
+
+    <!-- Clothing Section -->
+    <section id="clothing">
+        <h2>Clothing</h2>
+        <h3>Men's</h3>
+        <div class="product-grid">
+            <!-- Product cards for Clothing -->
+            <div class="product-card">
+                <img src="kurta.png" alt="Clothing Product 1">
+                <h3>kurta</h3>
+                <p>₹1299</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="pants.png" alt="Clothing Product 1">
+                <h3>Black Jeans</h3>
+                <p>₹997</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shirt.png" alt="Clothing Product 1">
+                <h3>Shirt</h3>
+                <p>₹699</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="fulltshirt.png" alt="Clothing Product 1">
+                <h3>Tshirt</h3>
+                <p>₹1499</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more clothing product cards here -->
+        </div>
+
+        <h3>Women's</h3>
+        <div class="product-grid">
+            <!-- Product cards for Clothing -->
+            <div class="product-card">
+                <img src="/e-commerce Images/sare.png" alt="Clothing Product 1">
+                <h3>Sare</h3>
+                <p>₹1999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/western.png" alt="Clothing Product 1">
+                <h3>Western</h3>
+                <p>₹1799</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/kurti.png" alt="Clothing Product 1">
+                <h3>Kurti</h3>
+                <p>₹1349</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/sare2.png" alt="Clothing Product 1">
+                <h3>Sare</h3>
+                <p>₹1799</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more clothing product cards here -->
+        </div>
+
+        <h3>Kids</h3>
+        <div class="product-grid">
+            <!-- Product cards for Clothing -->
+            <div class="product-card">
+                <img src="/e-commerce Images/frok.png" alt="Clothing Product 1">
+                <h3>Frok</h3>
+                <p>₹399</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/kidssandel.png" alt="Clothing Product 1">
+                <h3>Sandel</h3>
+                <p>₹299</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/kidshoes.png" alt="Clothing Product 1">
+                <h3>Shoes</h3>
+                <p>₹249</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/kidshirt.png" alt="Clothing Product 1">
+                <h3>Shirt</h3>
+                <p>₹1099</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more clothing product cards here -->
+        </div>
+    </section>
+
+
+    <section id="Electronic">
+        <h2>Electronic</h2>
+        <h3>Mobiles</h3>
+        <div class="product-grid">
+            <!-- Product cards for Clothing -->
+            <div class="product-card">
+                <img src="vivo.png" alt="Clothing Product 1">
+                <h3>Vivo</h3>
+                <p>₹19,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="iphone.png" alt="Clothing Product 1">
+                <h3>I-phone</h3>
+                <p>₹89,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="oneplus.png" alt="Clothing Product 1">
+                <h3>Oneplus</h3>
+                <p>₹38,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="galaxy.png" alt="Clothing Product 1">
+                <h3>Samsung Galaxy</h3>
+                <p>₹51,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more clothing product cards here -->
+        </div>
+
+        <h3>Laptop</h3>
+        <div class="product-grid">
+            <!-- Product cards for Clothing -->
+            <div class="product-card">
+                <img src="acer.png" alt="Clothing Product 1">
+                <h3>Acer</h3>
+                <p>₹1,19,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/lenovo2.png" alt="Clothing Product 1">
+                <h3>Lenovo</h3>
+                <p>₹93,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="samsung.png" alt="Clothing Product 1">
+                <h3>Samsung</h3>
+                <p>₹99,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="lenvo.png" alt="Clothing Product 1">
+                <h3>Lenovo</h3>
+                <p>₹1,19,999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more clothing product cards here -->
+        </div>
+
+        <h3>Earbuds</h3>
+        <div class="product-grid">
+            <!-- Product cards for Clothing -->
+            <div class="product-card">
+                <img src="neckband.png" alt="Clothing Product 1">
+                <h3>Neckband</h3>
+                <p>₹1299</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="headphone.png" alt="Clothing Product 1">
+                <h3>Headphone</h3>
+                <p>₹1499</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="earbuds.png" alt="Clothing Product 1">
+                <h3>Buds</h3>
+                <p>₹999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="headphone2.png" alt="Clothing Product 1">
+                <h3>Headset</h3>
+                <p>₹2299</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more clothing product cards here -->
+        </div>
+    </section>
+
+    
+
+
+    <section id="Sports">
+        <h2>Sports</h2>
+        <div class="product-grid">
+            <!-- Product cards for Electronics -->
+            <div class="product-card">
+                <img src="/e-commerce Images/bat.png" alt="Product 1">
+                <h3>Bat</h3>
+                <p>₹1199</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/carrom.png" alt="Product 1">
+                <h3>Carrom Board</h3>
+                <p>₹1899</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/badminton.png" alt="Product 1">
+                <h3>Badminton</h3>
+                <p>₹2999</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+
+            </div>
+
+            <div class="product-card">
+                <img src="/e-commerce Images/gymset.png" alt="Product 1">
+                <h3>Gym Set</h3>
+                <p>₹1499</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+            <!-- Add more electronic product cards here -->
+        </div>
+    </section><br><br><br><br>
+
+
+    <footer>
+        © 2024 My E-Commerce Store. All rights reserved.
+    </footer>
+
+
+    <script>
+        // Function to handle the redirection to the address page
+        function redirectToAddress() {
+            window.location.href = 'address.html';
+        }
+    
+        // Add event listener to all Buy Now buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all elements with the class 'buy-now-button'
+            const buyNowButtons = document.querySelectorAll('.buy-now-button');
+            
+            // Add click event listener to each button
+            buyNowButtons.forEach(button => {
+                button.addEventListener('click', redirectToAddress);
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('addressForm');
+    
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Collect form data
+                const formData = new FormData(form);
+                const params = new URLSearchParams(formData).toString();
+    
+                console.log("Form Data: ", params); // Debugging: Check form data in the console
+    
+                // Redirect to bill.html with form data
+                window.location.href = 'bill.html?' + params;
+            });
+        });
+    </script>
+    
+</body>
+</html>
 
