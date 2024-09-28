@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in - Video Editing Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#short-form">Short-form Videos</a></li>
+                <li><a href="#long-form">Long-form Videos</a></li>
+                <li><a href="#gaming">Gaming Videos</a></li>
+                <li><a href="#football">Football Edits</a></li>
+                <li><a href="#ecommerce">eCommerce Ads</a></li>
+                <li><a href="#documentary">Documentary Style</a></li>
+                <li><a href="#color-grading">Color Grading</a></li>
+                <li><a href="#anime">Anime Videos</a></li>
+                <li><a href="#ads">Ads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Short-form Videos Section -->
+    <section id="short-form" class="video-section">
+        <h2>Short-form Videos</h2>
+        <div class="video-container">
+            <video src="videos/short-form.mp4" controls></video>
+            <!-- Add more short-form videos here -->
+        </div>
+    </section>
+
+    <!-- Long-form Videos Section -->
+    <section id="long-form" class="video-section">
+        <h2>Long-form Videos</h2>
+        <div class="video-container">
+            <video src="videos/long-form.mp4" controls></video>
+            <!-- Add more long-form videos here -->
+        </div>
+    </section>
+
+    <!-- Gaming Videos Section -->
+    <section id="gaming" class="video-section">
+        <h2>Gaming Videos</h2>
+        <div class="video-container">
+            <video src="videos/gaming.mp4" controls></video>
+            <!-- Add more gaming videos here -->
+        </div>
+    </section>
+
+    <!-- Football Edits Section -->
+    <section id="football" class="video-section">
+        <h2>Football Edits</h2>
+        <div class="video-container">
+            <video src="videos/football.mp4" controls></video>
+            <!-- Add more football edits here -->
+        </div>
+    </section>
+
+    <!-- eCommerce Ads Section -->
+    <section id="ecommerce" class="video-section">
+        <h2>eCommerce Ads</h2>
+        <div class="video-container">
+            <video src="videos/ecommerce.mp4" controls></video>
+            <!-- Add more eCommerce ads here -->
+        </div>
+    </section>
+
+    <!-- Documentary Style Section -->
+    <section id="documentary" class="video-section">
+        <h2>Documentary Style</h2>
+        <div class="video-container">
+            <video src="videos/documentary.mp4" controls></video>
+            <!-- Add more documentary style videos here -->
+        </div>
+    </section>
+
+    <!-- Color Grading Section -->
+    <section id="color-grading" class="video-section">
+        <h2>Color Grading</h2>
+        <div class="video-container">
+            <video src="videos/color-grading.mp4" controls></video>
+            <!-- Add more color grading videos here -->
+        </div>
+    </section>
+
+    <!-- Anime Videos Section -->
+    <section id="anime" class="video-section">
+        <h2>Anime Videos</h2>
+        <div class="video-container">
+            <video src="videos/anime.mp4" controls></video>
+            <!-- Add more anime videos here -->
+        </div>
+    </section>
+
+    <!-- Ads Section -->
+    <section id="ads" class="video-section">
+        <h2>Ads</h2>
+        <div class="video-container">
+            <video src="videos/ads.mp4" controls></video>
+            <!-- Add more ads here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
